@@ -1,9 +1,20 @@
 import type { NextConfig } from "next";
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+const repo = isGithubActions && process.env.GITHUB_REPOSITORY 
+  ? process.env.GITHUB_REPOSITORY.replace(/.*?\//, '') 
+  : '';
+
 const nextConfig: NextConfig = {
   // WebGL / R3F canvases don't tolerate Strict Mode's dev double-mount
-  // (renderer gets disposed then re-read). Disable to avoid the churn.
   reactStrictMode: false,
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  basePath: repo ? `/${repo}` : "",
+  assetPrefix: repo ? `/${repo}/` : "",
 };
 
 export default nextConfig;
