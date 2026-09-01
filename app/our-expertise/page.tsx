@@ -78,18 +78,6 @@ export default function OurExpertisePage() {
           </div>
         </header>
 
-        {/* ---------------- INTRO ---------------- */}
-        <section className="bg-ink py-16 md:py-24">
-          <div className="mx-auto max-w-[1400px] px-6 md:px-10">
-            <p className="max-w-4xl text-[clamp(1.1rem,1.8vw,1.4rem)] leading-[1.6] text-ivory text-balance reveal is-in">
-              Most companies engage a different specialist for every stage of an SEZ&apos;s life — one firm for approvals, another for customs, another for tax, another for GST. Sampoorna consolidates all of it onto a single desk. Our expertise spans the full lifecycle of an SEZ business: from the first approval application through material clearance, ongoing compliance, GST, audit, and the broader business advisory work that supports growth once you&apos;re operational.
-            </p>
-            <p className="mt-6 max-w-4xl text-[clamp(1.1rem,1.8vw,1.4rem)] leading-[1.6] text-ivory text-balance reveal is-in" style={{ transitionDelay: '100ms' }}>
-              Below is the full breadth of what we handle — start with the six areas clients engage us for most, or browse the complete service registry for the full list.
-            </p>
-          </div>
-        </section>
-
         <ExpertiseClient />
       </main>
     </SmoothScroll>

@@ -297,9 +297,9 @@ export default function DutyFreePassage() {
               frameloop={active ? "always" : "never"}
               dpr={[1, 1.6]}
               resize={{ debounce: 0, scroll: false }}
-              camera={{ position: [0.5, 3.4, 12.5], fov: 40 }}
+              camera={{ position: [1.6, 3.2, 13.2], fov: 38 }}
               gl={{ antialias: true, alpha: true }}
-              onCreated={({ camera }) => camera.lookAt(0, 1.4, 0)}
+              onCreated={({ camera }) => camera.lookAt(1.4, 1.3, 0)}
               style={{ width: "100%", height: "100%" }}
             >
               <ambientLight intensity={0.85} />
@@ -312,9 +312,9 @@ export default function DutyFreePassage() {
         </div>
 
         {/* section label */}
-        <div className="pointer-events-none absolute left-6 top-28 z-10 md:left-10">
-          <p className="eyebrow mb-3">The duty-free journey</p>
-          <h2 className="max-w-md font-display text-[clamp(1.6rem,3vw,2.6rem)] font-light leading-[1.1] tracking-tight text-ivory">
+        <div className="pointer-events-none absolute left-6 top-24 z-20 md:left-12 max-w-lg">
+          <p className="eyebrow mb-2 !text-[#1f3d63] !font-bold tracking-widest">The duty-free journey</p>
+          <h2 className="font-display text-[clamp(1.8rem,3.2vw,2.8rem)] font-light leading-[1.15] tracking-tight text-[#16181d]">
             One partner, from the quayside to the open sea.
           </h2>
         </div>
@@ -322,14 +322,16 @@ export default function DutyFreePassage() {
         {/* APPROVED stamp */}
         <div
           ref={stampRef}
-          className="pointer-events-none absolute left-1/2 top-[38%] z-10 -translate-x-1/2 rounded-lg border-2 border-brass px-6 py-3 opacity-0"
+          className="pointer-events-none absolute left-1/2 top-[36%] z-30 -translate-x-1/2 rounded-xl border-[3px] border-emerald-600 bg-white/95 px-6 py-3 opacity-0 shadow-[0_12px_36px_rgba(0,0,0,0.3)] backdrop-blur-md"
           style={{ transform: "scale(0.8) rotate(-8deg)" }}
         >
-          <div className="font-display text-xl font-semibold tracking-wide text-brass">
-            APPROVED
-          </div>
-          <div className="text-center text-[0.6rem] uppercase tracking-[0.25em] text-brass">
-            Zero-rated GST
+          <div className="flex flex-col items-center justify-center rounded-md border border-dashed border-emerald-600/70 px-4 py-1.5">
+            <div className="font-display text-2xl md:text-3xl font-black tracking-widest text-emerald-700">
+              APPROVED
+            </div>
+            <div className="text-center text-[0.65rem] md:text-xs font-bold uppercase tracking-[0.25em] text-emerald-800">
+              Zero-Rated GST
+            </div>
           </div>
         </div>
 

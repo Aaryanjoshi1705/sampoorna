@@ -968,17 +968,28 @@ export default function ExpertiseClient() {
       style={shouldReduceMotion ? {} : { backgroundColor, color: textColor }}
     >
       
-      {/* ---------------- CORE SERVICES (DYNAMIC BENTO GRID) ---------------- */}
-      <section className="relative py-20 md:py-28 overflow-hidden z-20">
-        {/* line overlay — flows deep into the section behind cards */}
+      {/* ---------------- INTRO & CORE SERVICES WRAPPER (SCROLL LINE STARTS UNDER HEADER IMAGE) ---------------- */}
+      <section className="relative overflow-hidden z-20">
+        {/* line overlay — starts immediately below the header image and flows gracefully */}
         <ScrollLine
-          viewBox="0 0 1440 1200"
-          path="M -50 150 C 400 -200, 900 1300, 1540 950"
+          viewBox="0 0 1440 1600"
+          path="M -40 30 C 350 -10, 800 240, 500 700 C 240 1100, 1050 1400, 1540 1300"
           strokeWidth={22}
           className="hidden md:block -z-0 opacity-80"
         />
 
-        <div className="relative z-10 mx-auto max-w-[1400px] px-6 md:px-10">
+        {/* ---------------- INTRO ---------------- */}
+        <div className="relative z-10 mx-auto max-w-[1400px] px-6 pt-16 pb-10 md:pt-24 md:pb-16 md:px-10">
+          <p className="max-w-4xl text-[clamp(1.1rem,1.8vw,1.4rem)] leading-[1.6] text-ivory text-balance">
+            Most companies engage a different specialist for every stage of an SEZ&apos;s life — one firm for approvals, another for customs, another for tax, another for GST. Sampoorna consolidates all of it onto a single desk. Our expertise spans the full lifecycle of an SEZ business: from the first approval application through material clearance, ongoing compliance, GST, audit, and the broader business advisory work that supports growth once you&apos;re operational.
+          </p>
+          <p className="mt-6 max-w-4xl text-[clamp(1.1rem,1.8vw,1.4rem)] leading-[1.6] text-ivory text-balance">
+            Below is the full breadth of what we handle — start with the six areas clients engage us for most, or browse the complete service registry for the full list.
+          </p>
+        </div>
+
+        {/* ---------------- CORE SERVICES (DYNAMIC BENTO GRID) ---------------- */}
+        <div className="relative z-10 mx-auto max-w-[1400px] px-6 pb-20 md:pb-28 md:px-10">
           <motion.div 
             initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }} 
             whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }} 
