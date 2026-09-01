@@ -1,5 +1,6 @@
 "use client";
 
+import assetPath from "../utils/assetPath";
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform, useMotionValueEvent, useReducedMotion } from "framer-motion";
 import Link from "next/link";
@@ -22,7 +23,7 @@ const SERVICES = [
     content: "End-to-end support for SEZ Developers — from Project Report preparation through In-Principle and Formal Approvals, Notification, and ongoing area demarcation and sector changes as your project evolves.",
     cta: "See the Full Developer Process →",
     link: "/sez-approval-services",
-    image: "/images/registry/services-hub-01.jpg"
+    image: assetPath("/images/registry/services-hub-01.jpg")
   },
   {
     id: "02",
@@ -32,7 +33,7 @@ const SERVICES = [
     content: "Approval support for Co-Developers joining an existing SEZ project — Board of Approval sign-off, authorized operations approval, and goods/services list approval.",
     cta: "See the Full Co-Developer Process →",
     link: "/sez-approval-services",
-    image: "/images/registry/services-hub-02.jpg"
+    image: assetPath("/images/registry/services-hub-02.jpg")
   },
   {
     id: "03",
@@ -42,7 +43,7 @@ const SERVICES = [
     content: "Unit-level approval support — application and project report preparation, Approval Committee sign-off, Bond-cum-Legal Undertaking, and ongoing LOA amendments as you scale.",
     cta: "See the Full Unit Approval Process →",
     link: "/sez-approval-services",
-    image: "/images/registry/services-hub-03.jpg"
+    image: assetPath("/images/registry/services-hub-03.jpg")
   },
   {
     id: "04",
@@ -52,7 +53,7 @@ const SERVICES = [
     content: "From day-to-day SEZ operations and customs clearance through business advisory, tax compliance, GST, and audit — the complete range of services your business needs beyond initial approval.",
     cta: "Explore Our Full Expertise →",
     link: "/our-expertise",
-    image: "/images/registry/services-hub-04.jpg"
+    image: assetPath("/images/registry/services-hub-04.jpg")
   },
   {
     id: "05",
@@ -62,7 +63,7 @@ const SERVICES = [
     content: "Support for setting up units in an IFSC under section 18(1) of the SEZ Act, 2005 — including guidance on the fiscal incentives available under the SEZ Act, SEBI Guidelines, and IRDAI (IFSC) Guidelines.",
     cta: "See IFSC Details →",
     link: "/ifsc",
-    image: "/images/registry/services-hub-05.jpg"
+    image: assetPath("/images/registry/services-hub-05.jpg")
   },
   {
     id: "06",
@@ -72,7 +73,7 @@ const SERVICES = [
     content: "Import/local procurement consultancy, customs department liaison, C&F agent services, statutory register maintenance, periodic returns to the Development Commissioner, and on-site help desk support.",
     cta: "See All Services →",
     link: "/our-expertise",
-    image: "/images/registry/services-hub-06.jpg"
+    image: assetPath("/images/registry/services-hub-06.jpg")
   }
 ];
 

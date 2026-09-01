@@ -1,5 +1,6 @@
 "use client";
 
+import assetPath from "../utils/assetPath";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
@@ -8,25 +9,25 @@ const TEAM = [
   { 
     name: "Sanjeev Nandwani", 
     role: "ITS (Retd.)", 
-    image: "/images/sanjeev-nandwani.jpg", 
+    image: assetPath("/images/sanjeev-nandwani.jpg"), 
     note: "He is a former Civil Servant, and in a career spanning three decades as a member of the Indian Trade Service (1986 batch), he has worked, inter alia, as ED-CAPEXIL, Additional DGFT and Zonal Development Commissioner, SEZ’s for East and North-East India, Andhra Pradesh and Telangana under the Union Commerce Ministry. He took an early separation from the Government in 2016 after thirty years of service, and thereafter had a stint of three years as President of a Steel and Mining Company based out of Mumbai and Odisha. He then moved on to join Apparel Export Promotion Council (AEPC), under the Ministry of Textiles, as their Secretary General till October, 2020. He was a ‘Chevening Gurukul Scholar’ at the London School of Economics and a ‘Mason Fellow’ at the Harvard Kennedy School where he did his Master’s in Public Policy and Management. He is currently into Strategic Advisory in International Trade." 
   },
   { 
     name: "P.S Raman", 
     role: "Ex-Joint Development Commissioner, SEEPZ SEZ, Mumbai", 
-    image: "/images/ps-raman.jpg", 
+    image: assetPath("/images/ps-raman.jpg"), 
     note: "Has more than 30 years of working expertise in various capacities in the field of SEZs. Was a member of Sub-Committee constituted by Ministry of Commerce and Industry for drafting of procedures relating to SEZs and for drafting SEZ Rules/ Authority Rules/ simplification of procedures. Had worked with World Free Zones Organization, as its Regional Head for SAARC region, as a post-retirement assignment for 2 years. The World FZO provides a number of services to its members and partners. These services have been designed to support members in achieving their strategic objectives and enhancing operational performance, as well as bringing new insights and learnings around best practices." 
   },
   { 
     name: "I.Vikraman", 
     role: "IRS (Retd.) - Ex-Addl. Commissioner of Central Excise and Customs", 
-    image: "/images/i-vikraman.jpg", 
+    image: assetPath("/images/i-vikraman.jpg"), 
     note: "Had worked in SEEPZ SEZ over 10 years including 5 years as Dy. Commissioner of Customs, SEEPZ, during which period authored two Manuals on procedures to be followed which were published as Public Notice giving the manuals authority of Law. Recipient of most prestigious award from the President of India for Specially Distinguished Record of Service on the occasion of the Republic Day 1997. Had worked as Asst. Director in Mumbai Zonal Unit of Directorate of Enforcement and had detected several FEMA cases. Post retirement, worked as Consultant for ESSAR Group for two and half years. Working in the capacity of Executive Director of SEEPZ Gem and Jewellery Manufacturers’ Association, looking after the Policy and Legal issues of more than 150 Gems & Jewelry Units in SEEPZ SEZ." 
   },
   {
     name: "Anand Golas",
     role: "LLB, CISA, FCA",
-    image: "/images/anand-golas.png",
+    image: assetPath("/images/anand-golas.png"),
     note: "A senior partner in Devendra kumar and Associates which is one of the CAG empanelled auditors for major PSUs. He has several years of experience in SEZ compliances. Also an expert in corporate banking, Audit and Assurance Services Forensic, and various regulatory and tax compliances. He is expert in setting up new businesses in India."
   }
 ];

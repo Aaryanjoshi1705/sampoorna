@@ -1,5 +1,6 @@
 "use client";
 
+import assetPath from "../utils/assetPath";
 import { useState, useEffect, useRef, useMemo } from "react";
 import { 
   motion, 
@@ -34,37 +35,37 @@ const CORE_SERVICES = [
     title: "SEZ Approval Services", icon: FileCheck2,
     desc: "End-to-end approval support for Developers, Co-Developers, and Units under the SEZ Act, 2005.",
     link: "/sez-approval-services", size: "large",
-    image: "/images/corporate.jpg",
+    image: assetPath("/images/corporate.jpg"),
   },
   {
     title: "IFSC Setup", icon: Landmark,
     desc: "Setting up units in India's International Financial Services Centres, including GIFT City.",
     link: "/ifsc", size: "large",
-    image: "/images/port.jpg",
+    image: assetPath("/images/port.jpg"),
   },
   {
     title: "Customs Clearance", icon: PackageCheck,
     desc: "Bill of Entry/Export filing, DTA sale clearance, and material movement compliance.",
     link: null, size: "small",
-    image: "/images/corporate.jpg",
+    image: assetPath("/images/corporate.jpg"),
   },
   {
     title: "Compliance & Audit", icon: ShieldCheck,
     desc: "Statutory, internal, and due diligence audits alongside ongoing regulatory compliance.",
     link: null, size: "small",
-    image: "/images/port.jpg",
+    image: assetPath("/images/port.jpg"),
   },
   {
     title: "SEZ Site Helpdesk", icon: HeadphonesIcon,
     desc: "On-ground support at the SEZ site for day-to-day operational matters.",
     link: null, size: "small",
-    image: "/images/network.jpg",
+    image: assetPath("/images/network.jpg"),
   },
   {
     title: "B2B Research", icon: Search,
     desc: "Market entry research and regulatory landscape analysis for India expansion.",
     link: null, size: "small",
-    image: "/images/corporate.jpg",
+    image: assetPath("/images/corporate.jpg"),
   },
 ];
 
@@ -100,7 +101,7 @@ const REGISTRY = [
         "Handling all day-to-day SEZ operational activities"
       ]} />
     ),
-    image: "/images/corporate_boardroom.jpg",
+    image: assetPath("/images/corporate_boardroom.jpg"),
   },
   {
     id: "02", 
@@ -115,7 +116,7 @@ const REGISTRY = [
         "Filing of all required declarations and applications via the SEZ Online portal"
       ]} />
     ),
-    image: "/images/network.jpg",
+    image: assetPath("/images/network.jpg"),
   },
   {
     id: "03", 
@@ -131,7 +132,7 @@ const REGISTRY = [
         "Preparation of necessary documentation for Board of Approval / UAC"
       ]} />
     ),
-    image: "/images/blueprints.jpg",
+    image: assetPath("/images/blueprints.jpg"),
   },
   {
     id: "04", 
@@ -148,7 +149,7 @@ const REGISTRY = [
         "Strategic initiatives management and special projects"
       ]} />
     ),
-    image: "/images/office_handshake.jpg",
+    image: assetPath("/images/office_handshake.jpg"),
   },
   {
     id: "05", 
@@ -166,7 +167,7 @@ const REGISTRY = [
         "Competition mapping"
       ]} />
     ),
-    image: "/images/corporate.jpg",
+    image: assetPath("/images/corporate.jpg"),
   },
   {
     id: "06", 
@@ -182,7 +183,7 @@ const REGISTRY = [
         "We monitor the performance of the new processes to ensure smooth functioning"
       ]} />
     ),
-    image: "/images/futuristic_architecture.jpg",
+    image: assetPath("/images/futuristic_architecture.jpg"),
   },
   {
     id: "07", 
@@ -198,7 +199,7 @@ const REGISTRY = [
         "Identify competitive, economic, social, technological, regulatory factors"
       ]} />
     ),
-    image: "/images/interior.jpg",
+    image: assetPath("/images/interior.jpg"),
   },
   {
     id: "08", 
@@ -214,7 +215,7 @@ const REGISTRY = [
         "Relevant licenses and certificates required"
       ]} />
     ),
-    image: "/images/clean_aerial_port.jpg",
+    image: assetPath("/images/clean_aerial_port.jpg"),
   },
   {
     id: "09", 
@@ -232,7 +233,7 @@ const REGISTRY = [
         "TDS & Certification Work"
       ]} />
     ),
-    image: "/images/sez_port_aerial.jpg",
+    image: assetPath("/images/sez_port_aerial.jpg"),
   },
   {
     id: "10", 
@@ -248,7 +249,7 @@ const REGISTRY = [
         "Due Diligence Audit"
       ]} />
     ),
-    image: "/images/corporate_boardroom.jpg",
+    image: assetPath("/images/corporate_boardroom.jpg"),
   },
   {
     id: "11", 
@@ -265,7 +266,7 @@ const REGISTRY = [
         "GST Audit"
       ]} />
     ),
-    image: "/images/interior.jpg",
+    image: assetPath("/images/interior.jpg"),
   },
   {
     id: "12", 
@@ -282,7 +283,7 @@ const REGISTRY = [
         "Food Business License"
       ]} />
     ),
-    image: "/images/network.jpg",
+    image: assetPath("/images/network.jpg"),
   },
   {
     id: "13", 
@@ -299,7 +300,7 @@ const REGISTRY = [
         "Providing a help desk at the SEZ site"
       ]} />
     ),
-    image: "/images/port.jpg",
+    image: assetPath("/images/port.jpg"),
   },
 ];
 

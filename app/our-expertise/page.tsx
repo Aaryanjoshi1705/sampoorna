@@ -1,3 +1,4 @@
+import assetPath from "../utils/assetPath";
 import type { Metadata } from "next";
 import Nav from "../components/Nav";
 import Cursor from "../components/Cursor";
@@ -67,7 +68,7 @@ export default function OurExpertisePage() {
         <header className="relative flex h-[50vh] min-h-[380px] items-end overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url(/images/port-night.jpg)" }}
+            style={{ backgroundImage: `url(${assetPath("/images/port-night.jpg")})` }}
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,10,20,0.55),rgba(6,10,20,0.6),rgba(6,10,20,0.9))]" />
           <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 pb-16 md:px-10">

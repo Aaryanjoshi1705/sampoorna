@@ -1,3 +1,4 @@
+import assetPath from "./utils/assetPath";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Cursor from "./components/Cursor";
@@ -36,7 +37,7 @@ const SERVICES = [
   {
     tag: "01",
     title: "Developers",
-    img: "/images/port-cranes.jpg",
+    img: assetPath("/images/port-cranes.jpg"),
     points: [
       "Application & Project Report for setting up an SEZ",
       "In-Principle / Formal Approvals from the Board",
@@ -48,7 +49,7 @@ const SERVICES = [
   {
     tag: "02",
     title: "Co-Developers",
-    img: "/images/port-yard.jpg",
+    img: assetPath("/images/port-yard.jpg"),
     points: [
       "Co-Developer approval from the Board of Approval",
       "Approval of Authorised Operations",
@@ -59,7 +60,7 @@ const SERVICES = [
   {
     tag: "03",
     title: "SEZ Units",
-    img: "/images/port-containers.jpg",
+    img: assetPath("/images/port-containers.jpg"),
     points: [
       "Unit application & Project Report preparation",
       "Approval from the Approval Committee",
@@ -136,7 +137,7 @@ export default function Home() {
                 <div className="relative h-64 overflow-hidden rounded-2xl border border-[var(--line)] md:h-80">
                   <Parallax className="absolute inset-x-0 -top-[16%] h-[132%]" speed={12}>
                     <img
-                      src="/images/port-ship.jpg"
+                      src={assetPath("/images/port-ship.jpg")}
                       alt="Container vessel berthed at an SEZ port"
                       loading="lazy"
                       className="h-full w-full object-cover"
@@ -171,7 +172,7 @@ export default function Home() {
         <section className="relative flex h-[75vh] min-h-[520px] items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-scroll md:bg-fixed"
-            style={{ backgroundImage: "url(/images/port-aerial.jpg)" }}
+            style={{ backgroundImage: `url(${assetPath("/images/port-aerial.jpg")})` }}
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,18,22,0.68),rgba(16,18,22,0.5),rgba(16,18,22,0.88))]" />
           <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
@@ -295,7 +296,7 @@ export default function Home() {
         <section id="ifsc" className="relative mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
           <div className="relative overflow-hidden rounded-3xl border border-[var(--line)] bg-gradient-to-br from-ink-3/60 to-ink p-10 md:p-16">
             <img
-              src="/images/port-night.jpg"
+              src={assetPath("/images/port-night.jpg")}
               alt=""
               aria-hidden
               loading="lazy"
@@ -344,9 +345,9 @@ export default function Home() {
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {[
-              { src: "/images/port-cranes.jpg", cap: "Processing area" },
-              { src: "/images/port-yard.jpg", cap: "Bonded warehousing" },
-              { src: "/images/port-containers.jpg", cap: "Customs clearance" },
+              { src: assetPath("/images/port-cranes.jpg"), cap: "Processing area" },
+              { src: assetPath("/images/port-yard.jpg"), cap: "Bonded warehousing" },
+              { src: assetPath("/images/port-containers.jpg"), cap: "Customs clearance" },
             ].map((g, i) => (
               <Reveal key={g.cap} delay={i * 110}>
                 <div className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-[var(--line)]">

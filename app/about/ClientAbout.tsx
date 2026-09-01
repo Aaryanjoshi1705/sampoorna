@@ -1,5 +1,6 @@
 "use client";
 
+import assetPath from "../utils/assetPath";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Link from "next/link";
@@ -182,7 +183,7 @@ function WhereWeWork() {
   return (
     <section ref={ref} className="relative py-32 md:py-48 overflow-hidden">
       {/* Background with Diff Lights */}
-      <div className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-luminosity" style={{ backgroundImage: "url(/images/corporate_boardroom.jpg)" }} />
+      <div className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-luminosity" style={{ backgroundImage: `url(${assetPath("/images/corporate_boardroom.jpg")})` }} />
       <div className="absolute inset-0 bg-gradient-to-b from-[#16181D] via-[#16181D]/90 to-[#16181D]" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[60%] bg-[#d4af37]/15 blur-[140px] rounded-full pointer-events-none" />
 
@@ -216,19 +217,19 @@ function WhereWeWork() {
         <div className="relative h-[500px] lg:h-[700px] w-full mt-12 lg:mt-0">
           {/* Main Background Image */}
           <motion.div style={{ y: y1 }} className="absolute left-[10%] top-[10%] w-[80%] h-[80%] rounded-2xl overflow-hidden shadow-2xl bg-[#d4af37]/20">
-             <div className="absolute inset-0 bg-cover bg-center grayscale mix-blend-multiply opacity-70" style={{ backgroundImage: "url(/images/sez_port_aerial.jpg)" }} />
+             <div className="absolute inset-0 bg-cover bg-center grayscale mix-blend-multiply opacity-70" style={{ backgroundImage: `url(${assetPath("/images/sez_port_aerial.jpg")})` }} />
           </motion.div>
           
           {/* Parallax Floating Image 1 (GIFT City) */}
           <motion.div style={{ y: y2 }} className="absolute bottom-0 right-0 w-[55%] h-[45%] rounded-xl overflow-hidden shadow-2xl border-4 border-[#F5F5F3]">
-             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 hover:scale-110" style={{ backgroundImage: "url(/images/port-night.jpg)" }} />
+             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 hover:scale-110" style={{ backgroundImage: `url(${assetPath("/images/port-night.jpg")})` }} />
              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
              <div className="absolute bottom-5 left-5 text-white font-mono text-xs uppercase tracking-widest pointer-events-none">GIFT City, Gujarat</div>
           </motion.div>
 
           {/* Parallax Floating Image 2 (Mumbai) */}
           <motion.div style={{ y: y3 }} className="absolute top-[5%] left-0 w-[45%] h-[35%] rounded-xl overflow-hidden shadow-2xl border-4 border-[#F5F5F3]">
-             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 hover:scale-110" style={{ backgroundImage: "url(/images/clean_aerial_port.jpg)" }} />
+             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 hover:scale-110" style={{ backgroundImage: `url(${assetPath("/images/clean_aerial_port.jpg")})` }} />
              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
              <div className="absolute bottom-5 left-5 text-white font-mono text-xs uppercase tracking-widest pointer-events-none">Mumbai / SEEPZ</div>
           </motion.div>
@@ -286,7 +287,7 @@ export default function ClientAbout() {
         <section className="relative h-screen min-h-[600px] flex items-end pb-24 overflow-hidden text-white">
           <motion.div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url(/images/futuristic_port_aerial.jpg)" }}
+            style={{ backgroundImage: `url(${assetPath("/images/futuristic_port_aerial.jpg")})` }}
             animate={{
               scale: [1.05, 1.15, 1.05],
               x: ["-2%", "2%", "-2%"],
@@ -327,15 +328,15 @@ export default function ClientAbout() {
             <div className="flex flex-col gap-10">
               <div 
                 className="h-[400px] lg:h-[600px] w-full bg-cover bg-center rounded-2xl border border-white/5 shadow-xl"
-                style={{ backgroundImage: "url(/images/corporate_boardroom.jpg)" }}
+                style={{ backgroundImage: `url(${assetPath("/images/corporate_boardroom.jpg")})` }}
               />
               <div 
                 className="h-[400px] lg:h-[600px] w-full bg-cover bg-center rounded-2xl border border-white/5 shadow-xl"
-                style={{ backgroundImage: "url(/images/office_handshake.jpg)" }}
+                style={{ backgroundImage: `url(${assetPath("/images/office_handshake.jpg")})` }}
               />
               <div 
                 className="h-[400px] lg:h-[600px] w-full bg-cover bg-center rounded-2xl border border-white/5 shadow-xl"
-                style={{ backgroundImage: "url(/images/blueprints.jpg)" }}
+                style={{ backgroundImage: `url(${assetPath("/images/blueprints.jpg")})` }}
               />
             </div>
             

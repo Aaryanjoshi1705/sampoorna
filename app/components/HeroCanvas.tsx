@@ -1,5 +1,6 @@
 "use client";
 
+import assetPath from "../utils/assetPath";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Line, Html } from "@react-three/drei";

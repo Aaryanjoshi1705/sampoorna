@@ -1,5 +1,6 @@
 "use client";
 
+import assetPath from "../utils/assetPath";
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
@@ -30,7 +31,7 @@ const SERVICES = [
     ],
     cta: "Contact us for SEZ setup →",
     link: "/contact",
-    image: "/images/clean_aerial_port.jpg"
+    image: assetPath("/images/clean_aerial_port.jpg")
   },
   {
     id: "codevelopers",
@@ -45,7 +46,7 @@ const SERVICES = [
     ],
     cta: "Contact us for Co-Developer setup →",
     link: "/contact",
-    image: "/images/office_handshake.jpg"
+    image: assetPath("/images/office_handshake.jpg")
   },
   {
     id: "units",
@@ -62,7 +63,7 @@ const SERVICES = [
     ],
     cta: "Contact us for SEZ Unit setup →",
     link: "/contact",
-    image: "/images/registry/services-hub-01.jpg"
+    image: assetPath("/images/registry/services-hub-01.jpg")
   },
   {
     id: "expertise",
@@ -72,7 +73,7 @@ const SERVICES = [
     content: "From day-to-day SEZ operations and customs clearance through business advisory, tax compliance, GST, and audit — the complete range of services your business needs beyond initial approval.",
     cta: "Explore Our Full Expertise →",
     link: "/our-expertise",
-    image: "/images/corporate_boardroom.jpg"
+    image: assetPath("/images/corporate_boardroom.jpg")
   },
   {
     id: "ifsc",
@@ -82,7 +83,7 @@ const SERVICES = [
     content: "Support for setting up units in an IFSC under section 18(1) of the SEZ Act, 2005 — including guidance on the fiscal incentives available under the SEZ Act, SEBI Guidelines, and IRDAI (IFSC) Guidelines.",
     cta: "See IFSC Details →",
     link: "/ifsc",
-    image: "/images/futuristic_architecture.jpg"
+    image: assetPath("/images/futuristic_architecture.jpg")
   },
   {
     id: "other",
@@ -92,7 +93,7 @@ const SERVICES = [
     content: "Import/local procurement consultancy, customs department liaison, C&F agent services, statutory register maintenance, periodic returns to the Development Commissioner, and on-site help desk support.",
     cta: "See All Services →",
     link: "/our-expertise",
-    image: "/images/blueprints.jpg"
+    image: assetPath("/images/blueprints.jpg")
   }
 ];
 
@@ -222,7 +223,7 @@ export default function ServicesClient() {
         {/* Abstract Background Image */}
         <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
           <Image
-            src="/images/services/hero-services-bg.jpg"
+            src={assetPath("/images/services/hero-services-bg.jpg")}
             alt="Services background"
             fill
             priority
