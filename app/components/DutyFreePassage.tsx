@@ -101,7 +101,7 @@ function Rig({ progress }: { progress: React.MutableRefObject<number> }) {
   });
 
   return (
-    <group position={[0, -0.6, 0]}>
+    <group position={[2.6, -0.6, 0]}>
       {/* ground / quay apron */}
       <mesh position={[-2, -0.1, 0]}>
         <boxGeometry args={[11, 0.2, 5]} />
