@@ -6,8 +6,8 @@ const LINKS = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Expertise", href: "/our-expertise" },
-  { label: "Team", href: "/our-team" },
   { label: "IFSC", href: "/ifsc" },
+  { label: "Team", href: "/our-team" },
 ];
 
 export default function Nav({ isLightHero = false }: { isLightHero?: boolean } = {}) {

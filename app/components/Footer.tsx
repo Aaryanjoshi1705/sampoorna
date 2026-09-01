@@ -30,9 +30,10 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#1f3d63]">Explore</span>
               <Link href="/about" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">About</Link>
-              <Link href="/#services" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">Services</Link>
-              <Link href="/#team" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">Team</Link>
-              <Link href="/#ifsc" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">IFSC</Link>
+              <Link href="/services" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">Services</Link>
+              <Link href="/our-expertise" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">Expertise</Link>
+              <Link href="/ifsc" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">IFSC</Link>
+              <Link href="/our-team" className="text-sm font-medium text-slate-700 hover:text-slate-950 transition-colors">Team</Link>
             </div>
             <div className="flex flex-col gap-3">
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#1f3d63]">Contact</span>
