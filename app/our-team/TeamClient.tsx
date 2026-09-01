@@ -116,14 +116,14 @@ function TeamCard({ member, index, shouldReduceMotion }: any) {
     >
       {/* Left side: Details */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
-        <h3 className="font-display text-[clamp(2.5rem,4vw,4rem)] leading-none text-[var(--ink)] transition-colors duration-500 group-hover:text-[var(--brass)]">
+        <h3 className="font-display text-[clamp(2.5rem,4vw,4rem)] leading-none text-slate-900 transition-colors duration-500 group-hover:text-[#1f3d63]">
           {member.name}
         </h3>
-        <p className="mt-4 font-mono text-sm md:text-base uppercase tracking-widest text-[var(--brass-2)]">
+        <p className="mt-4 font-mono text-sm md:text-base uppercase tracking-widest text-[#1f3d63] font-bold">
           {member.role}
         </p>
         <div className="mt-8">
-          <p className="text-lg md:text-xl text-[var(--ivory-dim)] max-w-md leading-relaxed transition-opacity duration-500">
+          <p className="text-lg md:text-xl text-slate-700 max-w-md leading-relaxed transition-opacity duration-500 font-normal">
             {member.note}
           </p>
         </div>
