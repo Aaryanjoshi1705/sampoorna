@@ -35,14 +35,16 @@ export default function MaskReveal({
     return () => io.disconnect();
   }, []);
 
+  const TagComponent: any = Tag || "h2";
+
   return (
     <div ref={ref} className="mask-clip">
-      <Tag
+      <TagComponent
         className={`mask-inner ${className}`}
         style={{ transitionDelay: `${delay}ms` }}
       >
         {children}
-      </Tag>
+      </TagComponent>
     </div>
   );
 }

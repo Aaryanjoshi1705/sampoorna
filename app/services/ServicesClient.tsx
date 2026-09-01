@@ -260,7 +260,7 @@ export default function ServicesClient() {
               key={service.id} 
               service={service} 
               index={index} 
-              shouldReduceMotion={shouldReduceMotion} 
+              shouldReduceMotion={Boolean(shouldReduceMotion)} 
             />
           ))}
         </div>

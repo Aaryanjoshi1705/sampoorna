@@ -54,7 +54,7 @@ export default function RevealText({
       {words.map((w, i) => (
         <motion.span
           key={i}
-          variants={word}
+          variants={word as any}
           style={{ display: "inline-block", marginRight: "0.28em" }}
         >
           {w}

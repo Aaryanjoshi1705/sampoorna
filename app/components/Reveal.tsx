@@ -34,9 +34,11 @@ export default function Reveal({
     return () => io.disconnect();
   }, [delay]);
 
+  const TagComponent: any = Tag || "div";
+
   return (
-    <Tag ref={ref} className={`reveal ${className}`}>
+    <TagComponent ref={ref} className={`reveal ${className}`}>
       {children}
-    </Tag>
+    </TagComponent>
   );
 }
