@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const LINKS = [
   { label: "About", href: "/about" },
@@ -34,7 +35,7 @@ export default function Nav({ isLightHero = false }: { isLightHero?: boolean } =
       }`}
     >
       <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 md:px-10">
-        <a href="/" className="group flex items-center gap-3">
+        <Link href="/" className="group flex items-center gap-3">
           <span
             className={`flex h-9 w-9 items-center justify-center rounded-full border font-display text-lg transition-colors ${
               onDark ? "border-white/70 text-white" : "border-[var(--brass)] text-brass"
@@ -56,11 +57,11 @@ export default function Nav({ isLightHero = false }: { isLightHero?: boolean } =
               SEZ
             </span>
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-9 md:flex">
           {LINKS.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               className={`relative text-sm transition-colors ${
@@ -68,13 +69,13 @@ export default function Nav({ isLightHero = false }: { isLightHero?: boolean } =
               }`}
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
 
-        <a href="/contact" className="hidden md:inline-flex btn-primary !py-3 !px-6 magnetic">
+        <Link href="/contact" className="hidden md:inline-flex btn-primary !py-3 !px-6 magnetic">
           Get in touch
-        </a>
+        </Link>
 
         <button
           onClick={() => setOpen((v) => !v)}
@@ -95,18 +96,18 @@ export default function Nav({ isLightHero = false }: { isLightHero?: boolean } =
       >
         <div className="flex flex-col gap-1 px-6 py-4">
           {LINKS.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
               className="py-3 text-lg text-ivory-dim"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a href="/contact" onClick={() => setOpen(false)} className="btn-primary mt-3 justify-center">
+          <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary mt-3 justify-center">
             Get in touch
-          </a>
+          </Link>
         </div>
       </div>
     </header>

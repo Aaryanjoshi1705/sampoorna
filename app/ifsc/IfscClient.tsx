@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
@@ -268,10 +269,10 @@ export default function IfscClient() {
             Ready to explore your IFSC strategy?
           </Reveal>
           <Reveal delay={100}>
-            <a href="/#contact" className="group inline-flex items-center gap-2 font-medium text-[var(--brass)] text-lg border-b border-[var(--brass)] pb-1 transition-colors hover:text-[var(--brass-2)] hover:border-[var(--brass-2)]">
+            <Link href="/contact" className="group inline-flex items-center gap-2 font-medium text-[var(--brass)] text-lg border-b border-[var(--brass)] pb-1 transition-colors hover:text-[var(--brass-2)] hover:border-[var(--brass-2)]">
               Schedule a Consultation
               <span className="transition-transform group-hover:translate-x-1">→</span>
-            </a>
+            </Link>
           </Reveal>
         </div>
       </section>

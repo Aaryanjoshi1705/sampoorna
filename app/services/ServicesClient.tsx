@@ -1,6 +1,7 @@
 "use client";
 
 import assetPath from "../utils/assetPath";
+import Link from "next/link";
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
@@ -295,9 +296,9 @@ export default function ServicesClient() {
           <LoadLine />
         </div>
         
-        <a href="/contact" className="btn-primary text-lg px-8 py-4">
+        <Link href="/contact" className="btn-primary text-lg px-8 py-4">
           Get in touch
-        </a>
+        </Link>
       </section>
 
     </motion.div>

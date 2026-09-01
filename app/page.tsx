@@ -1,3 +1,4 @@
+import Link from "next/link";
 import assetPath from "./utils/assetPath";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
@@ -315,7 +316,7 @@ export default function Home() {
                   Financial Services Centre with the same rigour we bring to SEZs.
                 </Reveal>
                 <Reveal delay={200} className="mt-8">
-                  <a href="/ifsc" className="btn-primary magnetic">Explore IFSC Advisory →</a>
+                  <Link href="/ifsc" className="btn-primary magnetic">Explore IFSC Advisory →</Link>
                 </Reveal>
               </div>
               <Reveal delay={150}>
@@ -451,10 +452,11 @@ export default function Home() {
               <div className="flex gap-16">
                 <div className="flex flex-col gap-3">
                   <span className="text-xs uppercase tracking-[0.25em] text-brass">Explore</span>
-                  <a href="#about" className="text-sm text-ivory-dim hover:text-ivory">About</a>
-                  <a href="#services" className="text-sm text-ivory-dim hover:text-ivory">Services</a>
-                  <a href="/our-team" className="text-sm text-ivory-dim hover:text-ivory">Team</a>
-                  <a href="/ifsc" className="text-sm text-ivory-dim hover:text-ivory">IFSC</a>
+                  <Link href="/about" className="text-sm text-ivory-dim hover:text-ivory">About</Link>
+                  <Link href="/services" className="text-sm text-ivory-dim hover:text-ivory">Services</Link>
+                  <Link href="/our-expertise" className="text-sm text-ivory-dim hover:text-ivory">Expertise</Link>
+                  <Link href="/ifsc" className="text-sm text-ivory-dim hover:text-ivory">IFSC</Link>
+                  <Link href="/our-team" className="text-sm text-ivory-dim hover:text-ivory">Team</Link>
                 </div>
                 <div className="flex flex-col gap-3">
                   <span className="text-xs uppercase tracking-[0.25em] text-brass">Contact</span>
